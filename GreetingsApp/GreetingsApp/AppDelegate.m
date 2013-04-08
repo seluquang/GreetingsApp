@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <GrettingsLibrary/GrettingsLibrary.h>
-#import <GrettingsLibrary/JSONKit.h>
+#import "JSONKit.h"
 
 @implementation AppDelegate
 
@@ -17,6 +17,14 @@
     GrettingsLibrary *greet = [[GrettingsLibrary alloc] init];
     [greet chrismasGreetingWithName:@"Quang Ngo"];
     // Override point for customization after application launch.
+    
+    NSMutableDictionary *nameElements = [NSMutableDictionary dictionary];
+    [nameElements setObject:@"abcd" forKey:@"username"];
+    [nameElements setObject:@"1234" forKey:@"password"];
+    NSString* jsonString = [nameElements JSONString];
+    NSLog(@"%@", jsonString);
+    
+    
     return YES;
 }
 							
