@@ -18,7 +18,18 @@
 		74013C3A1712748B00F4F36B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74013C391712748B00F4F36B /* Default-568h@2x.png */; };
 		74013C3D1712748B00F4F36B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74013C3B1712748B00F4F36B /* MainStoryboard.storyboard */; };
 		74013C401712748B00F4F36B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74013C3F1712748B00F4F36B /* ViewController.m */; };
+		74013C541712769F00F4F36B /* libGrettingsLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74013C531712769300F4F36B /* libGrettingsLibrary.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74013C521712769300F4F36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74013C4E1712769200F4F36B /* GrettingsLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 74C7990C1712728500893DBE;
+			remoteInfo = GrettingsLibrary;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		74013C201712748B00F4F36B /* GreetingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +48,7 @@
 		74013C3C1712748B00F4F36B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		74013C3E1712748B00F4F36B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		74013C3F1712748B00F4F36B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		74013C4E1712769200F4F36B /* GrettingsLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GrettingsLibrary.xcodeproj; path = ../Submodules/GreetingsLibrary/GrettingsLibrary.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74013C541712769F00F4F36B /* libGrettingsLibrary.a in Frameworks */,
 				74013C241712748B00F4F36B /* UIKit.framework in Frameworks */,
 				74013C261712748B00F4F36B /* Foundation.framework in Frameworks */,
 				74013C281712748B00F4F36B /* CoreGraphics.framework in Frameworks */,
@@ -111,8 +124,17 @@
 		74013C4C171274AA00F4F36B /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				74013C4E1712769200F4F36B /* GrettingsLibrary.xcodeproj */,
 			);
 			name = Submodules;
+			sourceTree = "<group>";
+		};
+		74013C4F1712769200F4F36B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74013C531712769300F4F36B /* libGrettingsLibrary.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,12 +176,28 @@
 			mainGroup = 74013C171712748B00F4F36B;
 			productRefGroup = 74013C211712748B00F4F36B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74013C4F1712769200F4F36B /* Products */;
+					ProjectRef = 74013C4E1712769200F4F36B /* GrettingsLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				74013C1F1712748B00F4F36B /* GreetingsApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		74013C531712769300F4F36B /* libGrettingsLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGrettingsLibrary.a;
+			remoteRef = 74013C521712769300F4F36B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		74013C1E1712748B00F4F36B /* Resources */ = {

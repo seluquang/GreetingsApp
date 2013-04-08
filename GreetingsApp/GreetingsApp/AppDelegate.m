@@ -7,14 +7,14 @@
 //
 
 #import "AppDelegate.h"
-//#import <GrettingsLibrary/GrettingsLibrary.h>
+#import <GrettingsLibrary/GrettingsLibrary.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    GrettingsLibrary *greet = [[GrettingsLibrary alloc] init];
-//    [greet chrismasGreetingWithName:@"Quang Ngo"];
+    GrettingsLibrary *greet = [[GrettingsLibrary alloc] init];
+    [greet chrismasGreetingWithName:@"Quang Ngo"];
     // Override point for customization after application launch.
     return YES;
 }

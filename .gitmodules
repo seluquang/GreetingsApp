@@ -1,0 +1,3 @@
+[submodule "Submodules/GreetingsLibrary"]
+	path = Submodules/GreetingsLibrary
+	url = https://seluquang@github.com/seluquang/GreetingsLibrary.git
