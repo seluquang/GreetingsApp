@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <GrettingsLibrary/GrettingsLibrary.h>
+#import <GrettingsLibrary/JSONKit.h>
 
 @implementation AppDelegate
 
